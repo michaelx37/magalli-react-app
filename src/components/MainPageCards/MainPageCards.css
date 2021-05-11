@@ -1,0 +1,88 @@
+.cards__container {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+  width: 100%;
+  height: 23rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-column-gap: 3rem;
+}
+
+.card__gamer,
+.card__company {
+  color: white;
+  /* min-width: 21rem; */
+  width: 40rem;
+  text-align: center;
+}
+
+.card__gamer {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  justify-self: right;
+  /*background-color: rgba(45, 45, 212, 0.9);*/
+  /*background-color: rgba(107, 107, 107, 0.3);*/
+  background-image: radial-gradient(
+    circle at right,
+    rgba(107, 107, 107, 0.1),
+    rgba(107, 107, 107, 0.6)
+  );
+}
+
+.card__gamer:hover {
+  cursor: pointer;
+  background-image: radial-gradient(
+    circle at right,
+    rgba(107, 107, 107, 0.3),
+    rgba(45, 45, 212, 0.9)
+  );
+}
+
+.card__company {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  justify-self: left;
+  /*background-color: rgb(219, 34, 34, 0.9);*/
+  /*background-color: rgba(107, 107, 107, 0.3);*/
+  background-image: radial-gradient(
+    circle at left,
+    rgba(107, 107, 107, 0.1),
+    rgba(107, 107, 107, 0.6)
+  );
+}
+
+.card__company:hover {
+  cursor: pointer;
+  background-image: radial-gradient(
+    circle at left,
+    rgba(107, 107, 107, 0.3),
+    rgba(219, 34, 34, 0.9)
+  );
+}
+
+.card__gamer__desc,
+.card__company__desc {
+  width: 100%;
+}
+
+.card__gamer__desc__img,
+.card__company__desc__img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 10rem;
+  height: 10rem;
+}
+
+.card__gamer__desc__img img,
+.card__company__desc__img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 250px;
+}
+
+.card__gamer__desc__text,
+.card__company__desc__text {
+  display: inline-block;
+  vertical-align: middle;
+}

@@ -1,0 +1,11 @@
+.description {
+  margin-top: 3.5rem;
+  width: 100%;
+  text-align: center;
+  color: white;
+  /* grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4; */
+  /* background-color: rgba(60, 210, 230, 0.377); */
+}

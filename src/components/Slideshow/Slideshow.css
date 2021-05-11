@@ -1,0 +1,38 @@
+.slideshow {
+  margin-top: 8rem;
+  width: 100%;
+  height: 28rem;
+  /*background-color: rgb(56, 223, 70);*/
+  /* grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3; */
+}
+
+.img__container__center {
+  display: block;
+  margin: 0 auto;
+  width: 45rem;
+  height: 100%;
+  background-image: url("https://www.vigamusmagazine.com/wp-content/uploads/2021/02/Halo-3.jpeg");
+} /*
+.Img__Container__Left {
+  display: inline-block;
+  width: 25rem;
+  height: 10rem;
+  background-image: url("https://www.vigamusmagazine.com/wp-content/uploads/2021/02/Halo-3.jpeg");
+}
+
+.Img__Container__Right {
+  display: inline-block;
+  width: 25rem;
+  height: 10rem;
+  background-image: url("https://www.vigamusmagazine.com/wp-content/uploads/2021/02/Halo-3.jpeg");
+}*/
+/*
+.Img__Container__Left,
+.Img__Container__Center,
+.Img__Container__Right {
+  margin: auto 0;
+}
+*/
