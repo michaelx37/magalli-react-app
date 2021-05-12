@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import React, { Component } from "react";
+import { Route, Switch } from "react-router-dom";
 
 /*import Toolbar from '../components/UI/Toolbar/Toolbar';
 import Slideshow from '../components/Slideshow/Slideshow';
@@ -8,24 +8,26 @@ import CardGamer from '../components/CardGamer/CardGamer';
 import CardCompany from '../components/CardCompany/CardCompany';
 import Footer from '../components/UI/Footer/Footer';*/
 
-import Home from '../pages/Home/Home';
-import News from '../pages/News/News';
-import Blog from '../pages/Blog/Blog';
-import AboutUs from '../pages/AboutUs/AboutUs';
-import PrivateArea from '../pages/PrivateArea/PrivateArea';
+import Home from "../pages/Home/Home";
+import News from "../pages/News/News";
+import Blog from "../pages/Blog/Blog";
+import AboutUs from "../pages/AboutUs/AboutUs";
+import PrivateArea from "../pages/PrivateArea/PrivateArea";
+import RegistrationPage from "../pages/RegistrationPage/RegistrationPage";
 
-import './App.css';
+import "./App.css";
 
 class App extends Component {
-  render () {
+  render() {
     return (
       <div className="app">
         <Switch>
-          <Route path="/" exact component={Home}/>
-          <Route path="/news" exact component={News}/>
-          <Route path="/blog" exact component={Blog}/>
-          <Route path="/about-us" component={AboutUs}/>
-          <Route path="/private" exact component={PrivateArea}/>
+          <Route path="/" exact component={Home} />
+          <Route path="/news" exact component={News} />
+          <Route path="/blog" exact component={Blog} />
+          <Route path="/about-us" component={AboutUs} />
+          <Route path="/auth" exact component={PrivateArea} />
+          <Route path="/registration-page" component={RegistrationPage} />
         </Switch>
       </div>
     );

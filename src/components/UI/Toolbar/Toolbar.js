@@ -23,7 +23,7 @@ const Toolbar = () => {
                         <NavLink to='/about-us' className={"link"} activeClassName="active" exact>About us</NavLink>
                     </li>
                     <li className="navbar__link">
-                        <NavLink to='/private' className={"link"} exact>Account</NavLink>
+                        <NavLink to='/auth' className={"link"} exact>Account</NavLink>
                     </li>
                 </ul>
             </nav>

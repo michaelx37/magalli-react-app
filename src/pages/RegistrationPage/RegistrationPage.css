@@ -1,0 +1,11 @@
+.registration__main {
+  margin-top: 4.5rem;
+  min-height: calc(100vh - 4.5rem - 5rem);
+}
+
+.registration__form {
+  background-color: rgba(255, 255, 255, 0.582);
+  width: 37%;
+  margin: auto;
+  display: grid;
+}
