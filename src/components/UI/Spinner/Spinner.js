@@ -1,12 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import './Spinner.css'
+import "./Spinner.css";
 
 const Spinner = () => {
-    return (
-        <div>
-        </div>
-    );
-}
+  return <div></div>;
+};
 
 export default Spinner;

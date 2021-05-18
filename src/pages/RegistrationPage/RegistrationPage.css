@@ -9,3 +9,8 @@
   margin: auto;
   display: grid;
 }
+
+.registration__form input,
+.registration__form select {
+  font-family: inherit;
+}

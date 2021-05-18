@@ -1,12 +1,33 @@
-/* .home {
- display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto 28rem auto 25rem auto;
-  grid-column-gap: 3rem;
-  grid-row-gap: 4.5rem;
-} */
-
 .home__main {
-  margin-top: 4.5rem;
-  min-height: calc(100vh - 4.5rem - 5rem);
+  /* margin-top: 4.5rem; */
+  min-height: calc(100vh - 5rem);
+}
+
+.welcome {
+  display: flex;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://images01.nicepage.com/c461c07a441a5d220e8feb1a/506524b5fe295a46bca10adb/vcvv-min.jpg") no-repeat fixed
+      center/cover;
+  height: 100vh;
+  justify-content: center;
+}
+
+.welcome__image,
+.welcome__message {
+  color: white;
+  align-self: center;
+  margin: 0 2.5rem;
+}
+
+.welcome__image {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 25rem;
+  height: 25rem;
+  border-radius: 30rem;
+}
+
+.welcome__message {
+  width: 25rem;
+  /* background-color: rgba(255, 255, 255, 0.2); */
+  font-size: 1.2rem;
 }

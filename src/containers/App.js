@@ -9,6 +9,7 @@ import CardCompany from '../components/CardCompany/CardCompany';
 import Footer from '../components/UI/Footer/Footer';*/
 
 import Home from "../pages/Home/Home";
+import Search from "../pages/Search/Search";
 import News from "../pages/News/News";
 import Blog from "../pages/Blog/Blog";
 import AboutUs from "../pages/AboutUs/AboutUs";
@@ -23,6 +24,7 @@ class App extends Component {
       <div className="app">
         <Switch>
           <Route path="/" exact component={Home} />
+          <Route path="/search" exact component={Search} />
           <Route path="/news" exact component={News} />
           <Route path="/blog" exact component={Blog} />
           <Route path="/about-us" component={AboutUs} />

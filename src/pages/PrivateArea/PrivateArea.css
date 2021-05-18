@@ -17,3 +17,7 @@
   margin: auto;
   display: grid;
 }
+
+.authentication__form input {
+  font-family: inherit;
+}

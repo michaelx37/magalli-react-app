@@ -1,0 +1,14 @@
+.search-result-card {
+  display: inline-block;
+  width: 17rem;
+  height: 23rem;
+  margin: 1rem;
+  border-radius: 0.4rem;
+  background-color: rgba(255, 255, 255, 0.808);
+  box-shadow: 5px 5px 5px grey;
+}
+
+.search-result-card__description {
+  margin: 0 auto;
+  width: 85%;
+}

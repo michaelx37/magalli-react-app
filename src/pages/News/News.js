@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import Toolbar from '../../components/UI/Toolbar/Toolbar';
-import Footer from '../../components/UI/Footer/Footer';
+import Toolbar from "../../components/UI/Toolbar/Toolbar";
+import Footer from "../../components/UI/Footer/Footer";
 
-import './News.css'
+import "./News.css";
 
 class News extends Component {
-  render () {
+  render() {
     return (
       <div className="news">
         <Toolbar />

@@ -11,6 +11,8 @@
 
 .card__gamer,
 .card__company {
+  /* display: none; */
+
   color: white;
   /* min-width: 21rem; */
   width: 40rem;
@@ -23,20 +25,12 @@
   justify-self: right;
   /*background-color: rgba(45, 45, 212, 0.9);*/
   /*background-color: rgba(107, 107, 107, 0.3);*/
-  background-image: radial-gradient(
-    circle at right,
-    rgba(107, 107, 107, 0.1),
-    rgba(107, 107, 107, 0.6)
-  );
+  background-image: radial-gradient(circle at right, rgba(107, 107, 107, 0.1), rgba(107, 107, 107, 0.6));
 }
 
 .card__gamer:hover {
   cursor: pointer;
-  background-image: radial-gradient(
-    circle at right,
-    rgba(107, 107, 107, 0.3),
-    rgba(45, 45, 212, 0.9)
-  );
+  background-image: radial-gradient(circle at right, rgba(107, 107, 107, 0.3), rgba(45, 45, 212, 0.9));
 }
 
 .card__company {
@@ -45,20 +39,12 @@
   justify-self: left;
   /*background-color: rgb(219, 34, 34, 0.9);*/
   /*background-color: rgba(107, 107, 107, 0.3);*/
-  background-image: radial-gradient(
-    circle at left,
-    rgba(107, 107, 107, 0.1),
-    rgba(107, 107, 107, 0.6)
-  );
+  background-image: radial-gradient(circle at left, rgba(107, 107, 107, 0.1), rgba(107, 107, 107, 0.6));
 }
 
 .card__company:hover {
   cursor: pointer;
-  background-image: radial-gradient(
-    circle at left,
-    rgba(107, 107, 107, 0.3),
-    rgba(219, 34, 34, 0.9)
-  );
+  background-image: radial-gradient(circle at left, rgba(107, 107, 107, 0.3), rgba(219, 34, 34, 0.9));
 }
 
 .card__gamer__desc,
