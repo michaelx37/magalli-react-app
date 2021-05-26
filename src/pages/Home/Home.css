@@ -20,14 +20,22 @@
 }
 
 .welcome__image {
-  background-color: rgba(255, 255, 255, 0.2);
+  /* background-color: rgba(255, 255, 255, 0.2); */
   width: 25rem;
   height: 25rem;
   border-radius: 30rem;
+}
+
+.welcome__image img {
+  width: 100%;
 }
 
 .welcome__message {
   width: 25rem;
   /* background-color: rgba(255, 255, 255, 0.2); */
   font-size: 1.2rem;
+  text-align: justify;
+}
+
+@media (min-width: 40rem) {
 }

@@ -12,11 +12,11 @@ const PrivateArea = () => {
       <Toolbar />
       <main className="authentication__main">
         <form className="authentication__form">
-          <label for="email">Email:</label>
-          <input type="email" id="email"></input>
+          <label htmlFor="email">Email:</label>
+          <input type="email" id="email" />
 
-          <label for="password">Password:</label>
-          <input type="password" id="password"></input>
+          <label htmlFor="password">Password:</label>
+          <input type="password" id="password" />
 
           <button type="submit">Log In</button>
 

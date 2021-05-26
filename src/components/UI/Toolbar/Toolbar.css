@@ -42,7 +42,7 @@
   border-bottom-width: 0.3rem;
 }
 
-@media (min-width: 36rem) {
+@media (min-width: 40rem) {
   .toolbar {
     align-items: center;
     justify-content: space-between;

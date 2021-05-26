@@ -8,22 +8,26 @@ import SearchResultCard from "../../components/SearchResultCard/SearchResultCard
 import "./Search.css";
 
 const Search = () => {
+  const searchHandler = (event) => {
+    console.log(event.target.value);
+  };
+
   return (
     <div className="search">
       <Toolbar />
       <main className="search__main">
         <div className="search__form">
           <div className="search__form__bar">
-            <input type="search" placeholder="Search..."></input>
+            <input type="search" placeholder="Search..." onChange={searchHandler} />
             <button type="submit">Find</button>
           </div>
           <div className="search__form__filters">
-            <label for="role">Role: </label>
+            <label htmlFor="role">Role: </label>
             <select id="role">
               <option value="gamer">Gamer</option>
               <option value="company">Company</option>
             </select>
-            <label for="order-by">Order by: </label>
+            <label htmlFor="order-by">Order by: </label>
             <select id="order-by">
               <option value="relevance-ascending">Relevance ascending</option>
               <option value="relevance-descending">Relevance descending</option>
@@ -35,28 +39,28 @@ const Search = () => {
           </div>
         </div>
         <div className="search__results">
-          <Link>
+          <Link to="">
             <SearchResultCard title="Card 1" date="4h ago" desc="banane banane banane banane banane banane" />
           </Link>
-          <Link>
+          <Link to="">
             <SearchResultCard title="Card 2" date="15h ago" desc="banane banane banane banane banane banane" />
           </Link>
-          <Link>
+          <Link to="">
             <SearchResultCard title="Card 3" date="1d ago" desc="banane banane banane banane banane banane" />
           </Link>
-          <Link>
+          <Link to="">
             <SearchResultCard title="Card 4" date="2d ago" desc="banane banane banane banane banane banane" />
           </Link>
-          <Link>
+          <Link to="">
             <SearchResultCard title="Card 5" date="6d ago" desc="banane banane banane banane banane banane" />
           </Link>
-          <Link>
+          <Link to="">
             <SearchResultCard title="Card 6" date=">1w ago" desc="banane banane banane banane banane banane" />
           </Link>
-          <Link>
+          <Link to="">
             <SearchResultCard title="Card 7" date=">1mo ago" desc="banane banane banane banane banane banane" />
           </Link>
-          <Link>
+          <Link to="">
             <SearchResultCard title="Card 8" date=">2mo ago" desc="banane banane banane banane banane banane" />
           </Link>
         </div>

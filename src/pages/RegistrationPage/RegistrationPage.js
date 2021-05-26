@@ -12,30 +12,30 @@ const RegistrationPage = () => {
       <Toolbar />
       <main className="registration__main">
         <form className="registration__form">
-          <label for="first-name">First name:</label>
-          <input type="text" id="first-name"></input>
+          <label htmlFor="first-name">First name:</label>
+          <input type="text" id="first-name" />
 
-          <label for="last-name">Last name:</label>
-          <input type="text" id="last-name"></input>
+          <label htmlFor="last-name">Last name:</label>
+          <input type="text" id="last-name" />
 
-          <label for="password">Password:</label>
-          <input type="password" id="password"></input>
+          <label htmlFor="password">Password:</label>
+          <input type="password" id="password" />
 
-          <label for="email">Email:</label>
-          <input type="email" id="email"></input>
+          <label htmlFor="email">Email:</label>
+          <input type="email" id="email" />
 
-          <label for="username">Username:</label>
-          <input type="text" id="username"></input>
+          <label htmlFor="username">Username:</label>
+          <input type="text" id="username" />
 
-          <label for="user-role">Register as:</label>
+          <label htmlFor="user-role">Register as:</label>
           <select id="user-role">
             <option value="gamer">Gamer</option>
             <option value="company">Company</option>
           </select>
 
-          <input type="checkbox" id="agree-terms"></input>
-          <label for="agree-terms">
-            Agree to <Link>Terms &amp; Conditions</Link>
+          <input type="checkbox" id="agree-terms" />
+          <label htmlFor="agree-terms">
+            Agree to <Link to="">Terms &amp; Conditions</Link>
           </label>
 
           <button type="submit">Register</button>

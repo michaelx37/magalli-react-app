@@ -11,8 +11,6 @@
 
 .card__gamer,
 .card__company {
-  /* display: none; */
-
   color: white;
   /* min-width: 21rem; */
   width: 40rem;
@@ -23,8 +21,8 @@
   grid-column-start: 1;
   grid-column-end: 2;
   justify-self: right;
-  /*background-color: rgba(45, 45, 212, 0.9);*/
-  /*background-color: rgba(107, 107, 107, 0.3);*/
+  /* background-color: rgba(45, 45, 212, 0.9); */
+  /* background-color: rgba(107, 107, 107, 0.3); */
   background-image: radial-gradient(circle at right, rgba(107, 107, 107, 0.1), rgba(107, 107, 107, 0.6));
 }
 
