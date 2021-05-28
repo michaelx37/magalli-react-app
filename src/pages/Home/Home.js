@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-import Toolbar from "../../components/UI/Toolbar/Toolbar";
+import NavBar from "../../components/UI/NavBar/NavBar";
 // import SiteDescription from "../../components/SiteDescription/SiteDescription";
 // import MainPageCards from "../../components/MainPageCards/MainPageCards";
 import MainPageTarget from "../../components/MainPageTarget/MainPageTarget";
@@ -13,7 +13,7 @@ class Home extends Component {
   render() {
     return (
       <div className="home">
-        <Toolbar />
+        <NavBar />
         <main className="home__main">
           <div className="welcome">
             <div className="welcome__image">

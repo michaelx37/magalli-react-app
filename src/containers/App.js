@@ -9,12 +9,13 @@ import CardCompany from '../components/CardCompany/CardCompany';
 import Footer from '../components/UI/Footer/Footer';*/
 
 import Home from "../pages/Home/Home";
-import Search from "../pages/Search/Search";
+import Search from "../pages/Search/SearchPage";
 import News from "../pages/News/News";
 import Blog from "../pages/Blog/Blog";
 import AboutUs from "../pages/AboutUs/AboutUs";
-import PrivateArea from "../pages/PrivateArea/PrivateArea";
+import LogInPage from "../pages/LogInPage/LogInPage";
 import RegistrationPage from "../pages/RegistrationPage/RegistrationPage";
+import SingleProfilePage from "../pages/SingleProfilePage/SingleProfilePage";
 
 import "./App.css";
 
@@ -28,8 +29,9 @@ class App extends Component {
           <Route path="/news" exact component={News} />
           <Route path="/blog" exact component={Blog} />
           <Route path="/about-us" component={AboutUs} />
-          <Route path="/auth" exact component={PrivateArea} />
+          <Route path="/auth" exact component={LogInPage} />
           <Route path="/registration-page" component={RegistrationPage} />
+          <Route path="/user-profile" component={SingleProfilePage} />
         </Switch>
       </div>
     );

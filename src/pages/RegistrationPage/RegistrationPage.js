@@ -1,17 +1,24 @@
-import React from "react";
+import React /*, { useState }*/ from "react";
 import { Link } from "react-router-dom";
 
-import Toolbar from "../../components/UI/Toolbar/Toolbar";
+import NavBar from "../../components/UI/NavBar/NavBar";
 import Footer from "../../components/UI/Footer/Footer";
 
 import "./RegistrationPage.css";
 
 const RegistrationPage = () => {
+  //const [enteredEmail, setEnteredEmail] = useState("");
+
+  const submitHandler = (event) => {
+    event.preventDefault();
+    console.log("");
+  };
+
   return (
     <div className="registration">
-      <Toolbar />
+      <NavBar />
       <main className="registration__main">
-        <form className="registration__form">
+        <form className="registration__form" onSubmit={submitHandler}>
           <label htmlFor="first-name">First name:</label>
           <input type="text" id="first-name" />
 

@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 import Logo from "../Logo/Logo";
-import "./Toolbar.css";
+import ProfileAvatar from "./NavBarProfile";
+import "./NavBar.css";
 
 const Toolbar = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    const checkStoredLogInState = localStorage.getItem("isLoggedIn");
+
+    if (checkStoredLogInState === "true") {
+      setIsLoggedIn(true);
+    }
+  }, []);
+
   return (
     <header className="toolbar">
       <Link to="/" className="header__logo">
@@ -37,11 +48,12 @@ const Toolbar = () => {
               About us
             </NavLink>
           </li>
-          <li className="navbar__link">
+          {/* <li className="navbar__link">
             <NavLink to="/auth" className="link" exact>
-              Account
+              Login
             </NavLink>
-          </li>
+          </li> */}
+          <ProfileAvatar />
         </ul>
       </nav>
     </header>

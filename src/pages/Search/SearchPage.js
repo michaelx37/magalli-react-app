@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Toolbar from "../../components/UI/Toolbar/Toolbar";
+import NavBar from "../../components/UI/NavBar/NavBar";
 import Footer from "../../components/UI/Footer/Footer";
 import SearchResultCard from "../../components/SearchResultCard/SearchResultCard";
 
-import "./Search.css";
+import "./SearchPage.css";
 
 const Search = () => {
   const searchHandler = (event) => {
@@ -14,7 +14,7 @@ const Search = () => {
 
   return (
     <div className="search">
-      <Toolbar />
+      <NavBar />
       <main className="search__main">
         <div className="search__form">
           <div className="search__form__bar">
@@ -39,28 +39,28 @@ const Search = () => {
           </div>
         </div>
         <div className="search__results">
-          <Link to="">
+          <Link to="/user-profile">
             <SearchResultCard title="Card 1" date="4h ago" desc="banane banane banane banane banane banane" />
           </Link>
-          <Link to="">
+          <Link to="/user-profile">
             <SearchResultCard title="Card 2" date="15h ago" desc="banane banane banane banane banane banane" />
           </Link>
-          <Link to="">
+          <Link to="/user-profile">
             <SearchResultCard title="Card 3" date="1d ago" desc="banane banane banane banane banane banane" />
           </Link>
-          <Link to="">
+          <Link to="/user-profile">
             <SearchResultCard title="Card 4" date="2d ago" desc="banane banane banane banane banane banane" />
           </Link>
-          <Link to="">
+          <Link to="/user-profile">
             <SearchResultCard title="Card 5" date="6d ago" desc="banane banane banane banane banane banane" />
           </Link>
-          <Link to="">
+          <Link to="/user-profile">
             <SearchResultCard title="Card 6" date=">1w ago" desc="banane banane banane banane banane banane" />
           </Link>
-          <Link to="">
+          <Link to="/user-profile">
             <SearchResultCard title="Card 7" date=">1mo ago" desc="banane banane banane banane banane banane" />
           </Link>
-          <Link to="">
+          <Link to="/user-profile">
             <SearchResultCard title="Card 8" date=">2mo ago" desc="banane banane banane banane banane banane" />
           </Link>
         </div>
