@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, Redirect } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 import NavBar from "../../components/UI/NavBar/NavBar";
 import Footer from "../../components/UI/Footer/Footer";
@@ -7,6 +7,7 @@ import Footer from "../../components/UI/Footer/Footer";
 import "./LogInPage.css";
 
 const LogInPage = () => {
+  const history = useHistory();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
@@ -45,11 +46,12 @@ const LogInPage = () => {
 
     // setEnteredEmail("");
     // setEnteredPassword("");
+
+    history.replace("/");
   };
 
   return (
     <div className="authentication">
-      {/*!isLoggedIn ? <Redirect to="/" /> : ""*/}
       <NavBar />
       <main className="authentication__main">
         <form className="authentication__form" onSubmit={submitHandler}>
