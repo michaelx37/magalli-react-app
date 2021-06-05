@@ -1,22 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React, { useState /*, useEffect */ } from "react";
 import { Link, useHistory } from "react-router-dom";
+import { useDispatch } from "react-redux";
 
 import NavBar from "../../components/UI/NavBar/NavBar";
 import Footer from "../../components/UI/Footer/Footer";
+import { authActions } from "../../store/store";
 
-import "./LogInPage.css";
+import "./LoginPage.css";
 
-const LogInPage = () => {
+const LoginPage = () => {
   const history = useHistory();
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  // const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  useEffect(() => {
-    const checkStoredLogInState = localStorage.getItem("isLoggedIn");
+  // useEffect(() => {
+  //   const checkStoredLogInState = localStorage.getItem("isLoggedIn");
 
-    if (checkStoredLogInState === "true") {
-      setIsLoggedIn(true);
-    }
-  }, []);
+  //   if (checkStoredLogInState === "true") {
+  //     setIsLoggedIn(true);
+  //   }
+  // }, []);
 
   const [enteredEmail, setEnteredEmail] = useState("");
   const [enteredPassword, setEnteredPassword] = useState("");
@@ -31,21 +33,31 @@ const LogInPage = () => {
     console.log(event.target.value);
   };
 
-  const submitHandler = (event) => {
+  // const loginHandler = (event) => {
+  //   event.preventDefault();
+
+  //   const userInputs = {
+  //     email: enteredEmail,
+  //     password: enteredPassword,
+  //   };
+
+  //   localStorage.setItem("isLoggedIn", "true");
+  //   setIsLoggedIn(true);
+
+  //   console.log(userInputs);
+
+  //   // setEnteredEmail(""); //will clear imputs on submit
+  //   // setEnteredPassword("");
+
+  //   history.replace("/");
+  // };
+
+  const dispatch = useDispatch();
+
+  const loginHandler = (event) => {
     event.preventDefault();
 
-    const userInputs = {
-      email: enteredEmail,
-      password: enteredPassword,
-    };
-
-    localStorage.setItem("isLoggedIn", "true");
-    setIsLoggedIn(true);
-
-    console.log(userInputs);
-
-    // setEnteredEmail("");
-    // setEnteredPassword("");
+    dispatch(authActions.login());
 
     history.replace("/");
   };
@@ -54,7 +66,7 @@ const LogInPage = () => {
     <div className="authentication">
       <NavBar />
       <main className="authentication__main">
-        <form className="authentication__form" onSubmit={submitHandler}>
+        <form className="authentication__form" onSubmit={loginHandler}>
           <label htmlFor="email">Email:</label>
           <input type="email" id="email" value={enteredEmail} onChange={emailInputHandler} />
 
@@ -73,4 +85,4 @@ const LogInPage = () => {
   );
 };
 
-export default LogInPage;
+export default LoginPage;

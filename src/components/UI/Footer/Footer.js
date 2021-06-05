@@ -9,6 +9,11 @@ const Footer = () => {
       <nav className={classes.navbar}>
         <ul className={classes.navbar__links}>
           <li className={classes.navbar__link}>
+            <Link to="/about-us" className={classes.link}>
+              About Us
+            </Link>
+          </li>
+          <li className={classes.navbar__link}>
             <Link to="/" className={classes.link}>
               Support
             </Link>

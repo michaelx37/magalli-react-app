@@ -1,20 +1,23 @@
-import React, { useState, useEffect } from "react";
+import React /*, { useState, useEffect }*/ from "react";
 import { Link, NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 import Logo from "../Logo/Logo";
 import ProfileAvatar from "./NavBarProfile";
 import "./NavBar.css";
 
-const Toolbar = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+const NavBar = () => {
+  // const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  useEffect(() => {
-    const checkStoredLogInState = localStorage.getItem("isLoggedIn");
+  // useEffect(() => {
+  //   const checkStoredLogInState = localStorage.getItem("isLoggedIn");
 
-    if (checkStoredLogInState === "true") {
-      setIsLoggedIn(true);
-    }
-  }, []);
+  //   if (checkStoredLogInState === "true") {
+  //     setIsLoggedIn(true);
+  //   }
+  // }, []);
+
+  const isLogged = useSelector((state) => state.auth.isAuthenticated);
 
   return (
     <header className="toolbar">
@@ -33,21 +36,20 @@ const Toolbar = () => {
               Search
             </NavLink>
           </li>
-          <li className="navbar__link">
-            <NavLink to="/news" className="link" activeClassName="active" exact>
-              News
-            </NavLink>
-          </li>
-          <li className="navbar__link">
-            <NavLink to="/blog" className="link" activeClassName="active" exact>
-              Blog
-            </NavLink>
-          </li>
-          <li className="navbar__link">
-            <NavLink to="/about-us" className="link" activeClassName="active" exact>
-              About us
-            </NavLink>
-          </li>
+          {isLogged && (
+            <li className="navbar__link">
+              <NavLink to="/user-profile" className="link" activeClassName="active" exact>
+                User Profile
+              </NavLink>
+            </li>
+          )}
+          {isLogged && (
+            <li className="navbar__link">
+              <NavLink to="/team-profile" className="link" activeClassName="active" exact>
+                Team Profile
+              </NavLink>
+            </li>
+          )}
           {/* <li className="navbar__link">
             <NavLink to="/auth" className="link" exact>
               Login
@@ -60,4 +62,4 @@ const Toolbar = () => {
   );
 };
 
-export default Toolbar;
+export default NavBar;
