@@ -50,11 +50,6 @@ const NavBar = () => {
               </NavLink>
             </li>
           )}
-          {/* <li className="navbar__link">
-            <NavLink to="/auth" className="link" exact>
-              Login
-            </NavLink>
-          </li> */}
           <ProfileAvatar />
         </ul>
       </nav>
