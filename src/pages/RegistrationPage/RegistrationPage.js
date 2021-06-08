@@ -1,10 +1,10 @@
-import React /*, { useState }*/ from "react";
+import React, { Fragment /*, { useState }*/ } from "react";
 import { Link } from "react-router-dom";
 
 import NavBar from "../../components/UI/NavBar/NavBar";
 import Footer from "../../components/UI/Footer/Footer";
 
-import "./RegistrationPage.css";
+import classes from "./RegistrationPage.module.css";
 
 const RegistrationPage = () => {
   //const [enteredEmail, setEnteredEmail] = useState("");
@@ -15,10 +15,10 @@ const RegistrationPage = () => {
   };
 
   return (
-    <div className="registration">
+    <Fragment>
       <NavBar />
-      <main className="registration__main">
-        <form className="registration__form" onSubmit={submitHandler}>
+      <main className={classes.registration__main}>
+        <form className={classes.registration__form} onSubmit={submitHandler}>
           <label htmlFor="first-name">First name:</label>
           <input type="text" id="first-name" />
 
@@ -49,7 +49,7 @@ const RegistrationPage = () => {
         </form>
       </main>
       <Footer />
-    </div>
+    </Fragment>
   );
 };
 

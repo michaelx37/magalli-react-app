@@ -35,8 +35,8 @@
   align-self: center;
 }
 
-.profile__links-to-socials img,
-.team__links-to-socials img {
+.profile__linksToSocials img,
+.team__linksToSocials img {
   margin: 1rem;
   width: 2.5rem;
   display: inline-block;

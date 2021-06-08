@@ -1,23 +1,23 @@
-import React, { Component } from "react";
+import React, { Fragment, Component } from "react";
 import { Link } from "react-router-dom";
 
 import NavBar from "../../components/UI/NavBar/NavBar";
 import MainPageTarget from "../../components/MainPageTarget/MainPageTarget";
 import Footer from "../../components/UI/Footer/Footer";
 
-import "./Home.css";
+import classes from "./Home.module.css";
 
 class Home extends Component {
   render() {
     return (
-      <div className="home">
+      <Fragment>
         <NavBar />
-        <main className="home__main">
-          <div className="welcome">
-            <div className="welcome__image">
+        <main className={classes.home__main}>
+          <div className={classes.welcome}>
+            <div className={classes.welcome__image}>
               <img src="https://www.pikpng.com/pngl/b/97-972411_dragon-white-dragon-logo-png-clipart.png" alt=""></img>
             </div>
-            <div className="welcome__message">
+            <div className={classes.welcome__message}>
               <h2>Lorem ipsum dolor sit amet</h2>
               <p>
                 consectetur adipiscing elit. Maecenas felis felis, commodo et massa ut, semper varius nisi. Vestibulum
@@ -26,7 +26,7 @@ class Home extends Component {
                 Suspendisse in lobortis est, dictum facilisis diam. Etiam odio urna, scelerisque in ex nec, semper
                 luctus lacus.
               </p>
-              <Link to="/search" className="">
+              <Link to="/search" className={""}>
                 Get started!
               </Link>
             </div>
@@ -48,7 +48,7 @@ class Home extends Component {
           />
         </main>
         <Footer />
-      </div>
+      </Fragment>
     );
   }
 }

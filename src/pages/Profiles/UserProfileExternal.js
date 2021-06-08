@@ -1,8 +1,10 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 import NavBar from "../../components/UI/NavBar/NavBar";
 import Footer from "../../components/UI/Footer/Footer";
-import "./ProfilesExternal.css";
+
+import classes from "./ProfilesExternal.module.css";
+
 import YtLogo from "../../assets/icons/iconfinder_4-youtube_video_4202041.png";
 import FbLogo from "../../assets/icons/iconfinder_Colored_Facebook3_svg_5365678.png";
 import IgLogo from "../../assets/icons/iconfinder_social_media_applications_3-instagram_4102579.png";
@@ -12,30 +14,30 @@ import TwitterLogo from "../../assets/icons/iconfinder_square-twitter_317723.png
 
 const UserProfileExternal = () => {
   return (
-    <div>
+    <Fragment>
       <NavBar />
-      <div className="profile__main">
-        <div className="profile__info">
-          <div className="profile__info__section">
-            <div className="profile__image__container">
+      <div className={classes.profile__main}>
+        <div className={classes.profile__info}>
+          <div className={classes.profile__info__section}>
+            <div className={classes.profile__image__container}>
               <img
-                className="profile__image"
+                className={classes.profile__image}
                 // src="https://sm.ign.com/ign_it/screenshot/default/angry-gamer_8tcc.jpg"
                 alt=""
               />
             </div>
-            <div className="profile__desc__container">
-              <h2 className="profile__full-name">Full Name</h2>
-              <h3 className="profile__username">Username</h3>
-              <p className="profile__bio">
+            <div className={classes.profile__desc__container}>
+              <h2 className={classes.profile__fullName}>Full Name</h2>
+              <h3 className={classes.profile__username}>Username</h3>
+              <p className={classes.profile__bio}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas felis felis, commodo et massa ut,
                 semper varius nisi.
               </p>
             </div>
           </div>
-          <div className="profile__info__section">
-            <div className="profile__actual-team"></div>
-            <div className="profile__links-to-socials">
+          <div className={classes.profile__info__section}>
+            <div className={classes.profile__actualTeam}></div>
+            <div className={classes.profile__linksToSocials}>
               <img src={YtLogo} alt="" />
               <img src={SteamLogo} alt="" />
               <img src={TwitchLogo} alt="" />
@@ -45,11 +47,11 @@ const UserProfileExternal = () => {
             </div>
           </div>
         </div>
-        <div className="profile__achievements">User Achievements</div>
-        <div className="profile__activities">Activities</div>
+        <div className={classes.profile__achievements}>User Achievements</div>
+        <div className={classes.profile__activities}>Activities</div>
       </div>
       <Footer />
-    </div>
+    </Fragment>
   );
 };
 

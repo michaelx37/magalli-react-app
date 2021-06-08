@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
 
 import Home from "../pages/Home/Home";
+import Feed from "../pages/Feed/Feed";
 import Search from "../pages/Search/SearchPage";
 import AboutUs from "../pages/AboutUs/AboutUs";
 import LoginPage from "../pages/LoginPage/LoginPage";
@@ -17,6 +18,7 @@ class App extends Component {
       <div className="app">
         <Switch>
           <Route path="/" exact component={Home} />
+          <Route path="/feed" exact component={Feed} />
           <Route path="/search" exact component={Search} />
           <Route path="/about-us" component={AboutUs} />
           <Route path="/auth" exact component={LoginPage} />

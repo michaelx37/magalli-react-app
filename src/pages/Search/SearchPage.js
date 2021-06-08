@@ -1,11 +1,11 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 
 import NavBar from "../../components/UI/NavBar/NavBar";
 import Footer from "../../components/UI/Footer/Footer";
 import SearchResultCard from "../../components/SearchResultCard/SearchResultCard";
 
-import "./SearchPage.css";
+import classes from "./SearchPage.module.css";
 
 const Search = () => {
   const searchHandler = (event) => {
@@ -13,15 +13,15 @@ const Search = () => {
   };
 
   return (
-    <div className="search">
+    <Fragment>
       <NavBar />
-      <main className="search__main">
-        <div className="search__form">
-          <div className="search__form__bar">
+      <main className={classes.search__main}>
+        <div className={classes.search__form}>
+          <div className={classes.earch__form__bar}>
             <input type="search" placeholder="Search..." onChange={searchHandler} />
             <button type="submit">Find</button>
           </div>
-          <div className="search__form__filters">
+          <div className={classes.search__form__filters}>
             <label htmlFor="role">Role: </label>
             <select id="role">
               <option value="gamer">Gamer</option>
@@ -38,7 +38,7 @@ const Search = () => {
             </select>
           </div>
         </div>
-        <div className="search__results">
+        <div className={classes.search__results}>
           <Link to="/user-profile">
             <SearchResultCard title="Card 1" date="4h ago" desc="banane banane banane banane banane banane" />
           </Link>
@@ -66,7 +66,7 @@ const Search = () => {
         </div>
       </main>
       <Footer />
-    </div>
+    </Fragment>
   );
 };
 

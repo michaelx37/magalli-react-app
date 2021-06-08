@@ -39,7 +39,7 @@
   padding: 1.3rem;
 }
 
-.search__form__bar input[type="search"] {
+.search__form__bar input/*[type="search"]*/ {
   width: 80%;
 }
 

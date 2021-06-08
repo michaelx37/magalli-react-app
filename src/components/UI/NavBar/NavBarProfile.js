@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 import { authActions } from "../../../store/store";
 
-import "./NavBarProfile.css";
+import classes from "./NavBarProfile.module.css";
 
 const ProfileAvatar = () => {
   // const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -30,8 +30,8 @@ const ProfileAvatar = () => {
   };
 
   let displayLoggedUser = (
-    <li className="navbar__link">
-      <NavLink to="/auth" className="link" exact>
+    <li className={classes.navbar__link}>
+      <NavLink to="/auth" className={classes.link} exact>
         Log In
       </NavLink>
     </li>
@@ -39,9 +39,9 @@ const ProfileAvatar = () => {
 
   if (isLogged) {
     displayLoggedUser = (
-      <li className="navbar__link">
+      <li className={classes.navbar__link}>
         <button onClick={logoutHandler}>Log Out</button>
-        {/* <NavLink to="/" className="link" exact>
+        {/* <NavLink to="/" className={classes.link} exact>
           Log Out
         </NavLink> */}
       </li>

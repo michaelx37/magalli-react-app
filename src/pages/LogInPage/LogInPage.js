@@ -1,4 +1,4 @@
-import React, { useState /*, useEffect */ } from "react";
+import React, { Fragment, useState /*, useEffect */ } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
 
@@ -6,7 +6,7 @@ import NavBar from "../../components/UI/NavBar/NavBar";
 import Footer from "../../components/UI/Footer/Footer";
 import { authActions } from "../../store/store";
 
-import "./LoginPage.css";
+import classes from "./LoginPage.module.css";
 
 const LoginPage = () => {
   const history = useHistory();
@@ -63,10 +63,10 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="authentication">
+    <Fragment>
       <NavBar />
-      <main className="authentication__main">
-        <form className="authentication__form" onSubmit={loginHandler}>
+      <main className={classes.authentication__main}>
+        <form className={classes.authentication__form} onSubmit={loginHandler}>
           <label htmlFor="email">Email:</label>
           <input type="email" id="email" value={enteredEmail} onChange={emailInputHandler} />
 
@@ -81,7 +81,7 @@ const LoginPage = () => {
         </form>
       </main>
       <Footer />
-    </div>
+    </Fragment>
   );
 };
 

@@ -1,0 +1,31 @@
+.feed {
+  margin-top: 10rem;
+  width: 80rem;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+
+  background-color: rgba(216, 191, 216, 0.459);
+  border-radius: 0.5rem;
+}
+
+.feed__profile,
+.feed__cards,
+.feed__extra {
+  align-self: start;
+}
+
+.feed__profile {
+  width: 18rem;
+  height: 28rem;
+  background-color: rgba(255, 99, 71, 0.596);
+  border-radius: 0.5rem;
+}
+
+.feed__extra div {
+  width: 18rem;
+  height: 28rem;
+  background-color: rgba(57, 255, 195, 0.596);
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
