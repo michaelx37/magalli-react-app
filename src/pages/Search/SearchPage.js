@@ -17,7 +17,7 @@ const Search = () => {
       <NavBar />
       <main className={classes.search__main}>
         <div className={classes.search__form}>
-          <div className={classes.earch__form__bar}>
+          <div className={classes.search__form__bar}>
             <input type="search" placeholder="Search..." onChange={searchHandler} />
             <button type="submit">Find</button>
           </div>
