@@ -6,26 +6,26 @@
   justify-content: space-between;
 
   background-color: rgba(216, 191, 216, 0.459);
-  border-radius: 0.5rem;
+  border-radius: 8px;
 }
 
-.feed__profile,
-.feed__cards,
-.feed__extra {
+.feed__profile__container,
+.feed__cards__container,
+.feed__extra__container {
   align-self: start;
 }
 
-.feed__profile {
+.feed__profile__container {
   width: 18rem;
   height: 28rem;
   background-color: rgba(255, 99, 71, 0.596);
-  border-radius: 0.5rem;
+  border-radius: 8px;
 }
 
-.feed__extra div {
+.feed__extra__container div {
   width: 18rem;
   height: 28rem;
   background-color: rgba(57, 255, 195, 0.596);
-  border-radius: 0.5rem;
+  border-radius: 8px;
   margin-bottom: 2rem;
 }

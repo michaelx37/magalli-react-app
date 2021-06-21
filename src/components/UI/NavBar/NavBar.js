@@ -37,6 +37,11 @@ const NavBar = () => {
             </NavLink>
           </li>
           <li className={classes.navbar__link}>
+            <NavLink to="/network" className={classes.link} activeClassName="active" exact>
+              Network
+            </NavLink>
+          </li>
+          <li className={classes.navbar__link}>
             <NavLink to="/search" className={classes.link} activeClassName="active" exact>
               Search
             </NavLink>

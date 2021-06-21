@@ -1,0 +1,18 @@
+.createPost {
+  margin-bottom: 3.5rem;
+  padding: 0.5rem;
+
+  background-color: rgba(216, 191, 216, 0.459);
+  border-radius: 8px;
+}
+
+.createPost__input {
+  width: 100%;
+  margin-bottom: 0.6rem;
+}
+
+.createPost__buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}

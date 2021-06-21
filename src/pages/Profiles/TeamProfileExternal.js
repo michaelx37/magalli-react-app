@@ -42,6 +42,8 @@ const TeamProfileExternal = () => {
             </div>
           </div>
         </div>
+        <div>mostra di cosa il team necessita</div>
+        <div>attività recenti</div>
         <div className={classes.team__activities}></div>
       </div>
       <Footer />

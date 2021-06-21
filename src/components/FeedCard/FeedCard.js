@@ -1,5 +1,7 @@
 import React from "react";
 
+import Button from "../UI/Button/Button";
+
 import classes from "./FeedCard.module.css";
 
 const FeedCard = (props) => {
@@ -24,9 +26,9 @@ const FeedCard = (props) => {
       </div>
       <div className={classes.feed__card__title}>A Youtube video</div>
       <div className={classes.feed__card__buttons}>
-        <button>Like</button>
-        <button>Comment</button>
-        <button>Share</button>
+        <Button>Like</Button>
+        <Button>Comment</Button>
+        <Button>Share</Button>
       </div>
     </div>
   );
