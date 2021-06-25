@@ -4,10 +4,11 @@
 
 body {
   margin: 0;
+  background-color: rgb(53, 59, 71);
   /* background-image: url("https://wallpaperaccess.com/full/2985789.jpg");
   background-size: cover; */
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    #222 url("https://wallpaperaccess.com/full/2985789.jpg") no-repeat fixed center/cover;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    #222 url("https://wallpaperaccess.com/full/2985789.jpg") no-repeat fixed center/cover; */
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
 }

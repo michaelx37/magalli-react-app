@@ -19,3 +19,30 @@
   border-bottom-style: solid;
   border-bottom-width: 0.3rem;
 }
+
+.avatar__container {
+  position: relative;
+  cursor: pointer;
+}
+
+.avatar {
+  display: inline-block;
+  max-height: 4rem;
+  max-width: 4rem;
+}
+
+.dropdown {
+  position: absolute;
+  background-color: #2d8af5;
+  min-width: 10rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+  color: white;
+  text-align: center;
+  border-radius: 5%;
+}
+
+.logOutButton {
+  width: 100%;
+}

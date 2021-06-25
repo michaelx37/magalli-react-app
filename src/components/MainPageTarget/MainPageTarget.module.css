@@ -7,7 +7,8 @@
   justify-content: space-evenly;
   flex-flow: wrap;
   padding-top: 3rem;
-  background-color: rgba(46, 45, 53, 0.918);
+  /* background-color: rgba(46, 45, 53, 0.918);126, 31, 134 */
+  background-color: rgb(140, 160, 215);
   margin-bottom: 3.5rem;
 }
 

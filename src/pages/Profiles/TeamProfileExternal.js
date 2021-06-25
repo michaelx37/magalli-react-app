@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 
 import NavBar from "../../components/UI/NavBar/NavBar";
-import Footer from "../../components/UI/Footer/Footer";
+//import Footer from "../../components/UI/Footer/Footer";
 
 import classes from "./ProfilesExternal.module.css";
 
@@ -46,7 +46,7 @@ const TeamProfileExternal = () => {
         <div>attività recenti</div>
         <div className={classes.team__activities}></div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </Fragment>
   );
 };

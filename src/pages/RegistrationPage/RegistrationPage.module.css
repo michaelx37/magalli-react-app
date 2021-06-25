@@ -1,4 +1,6 @@
 .registration__main {
+  width: 80rem;
+  align-self: center;
   margin-top: 4.5rem;
   min-height: calc(100vh - 4.5rem - 5rem);
 }
