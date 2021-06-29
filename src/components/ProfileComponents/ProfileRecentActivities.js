@@ -5,7 +5,8 @@ import classes from "./ProfileRecentActivities.module.css";
 const ProfileRecentActivities = () => {
   return (
     <div className={classes.activities}>
-      <h2>Recent Activities</h2>
+      <h4>Recent Activities</h4>
+      <div>More</div>
     </div>
   );
 };

@@ -2,55 +2,8 @@
 .team__main {
   align-self: center;
   color: white;
-  background-color: rgb(51, 51, 65);
+  background-color: rgb(77, 77, 99);
   margin-top: 7.5rem;
   width: 80rem;
-}
-
-.profile__info,
-.team__info {
-  justify-content: center;
-  display: flex;
-}
-
-.profile__info__left,
-.team__info__section {
-  /* align-self: center; */
-  display: flex;
-  flex-flow: row; /* good left part, bad right part */
-}
-
-.profile__image__container,
-.team__image__container {
-  align-self: center;
-  width: 12rem;
-  height: 12rem;
-  border-radius: 100%;
-  overflow: hidden;
-  background-color: rgb(0, 151, 151);
-}
-
-.profile__desc__container,
-.team__desc__container {
-  align-self: center;
-  max-width: 24rem;
-  padding: 1rem;
-}
-
-.profile__info__right {
-  align-self: center;
-  display: flex;
-  flex-flow: column; /* bad left part, good right part */
-}
-
-.profile__status__team,
-.profile__status__platform {
-  text-align: right;
-}
-
-.profile__linksToSocials img,
-.team__linksToSocials img {
-  margin: 1rem;
-  width: 2.5rem;
-  display: inline-block;
+  border-radius: 14px;
 }

@@ -1,5 +1,5 @@
 import React, { useState /*, useEffect*/ } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 
 import { authActions } from "../../../store/store";
@@ -46,21 +46,31 @@ const ProfileAvatar = () => {
   if (isLogged) {
     displayLoggedUser = (
       <li className={classes.navbar__link}>
-        <div className={classes.avatar__container} onClick={toggleDropdown}>
+        <div className={classes.avatar__container}>
           <img
             className={classes.avatar}
             src="https://sg-res.9appsinstall.com/sg/res/jpg/26/cc/f8d94127b50f6c29eb7d2c60983e-74e7.jpg"
             alt=""
+            onClick={toggleDropdown}
           />
           {showUserDropdown ? (
             <div className={classes.dropdown}>
-              <p style={{ fontWeight: "bold" }}>MG x M1CH43LX37</p>
-              <p>Your Profile</p>
-              <p>[SCT] Schifo Come Tim</p>
-              <p>Settings</p>
-              <button onClick={logoutHandler} className={classes.logOutButton}>
+              <p style={{ fontWeight: "bold", textAlign: "center", fontSize: "1.2rem" }}>MG x M1CH43LX37</p>
+              <Link className={classes.dropdown__link} to="/user-profile">
+                Your Profile
+              </Link>
+              <hr className={classes.separator} />
+              <Link className={classes.dropdown__link} to="/team-profile">
+                [SCT] Schifo Come Tim
+              </Link>
+              <hr className={classes.separator} />
+              <Link className={classes.dropdown__link} to="/user-profile">
+                Settings
+              </Link>
+              <hr className={classes.separator} />
+              <p className={classes.dropdown__link} onClick={logoutHandler}>
                 Log Out
-              </button>
+              </p>
             </div>
           ) : (
             ""

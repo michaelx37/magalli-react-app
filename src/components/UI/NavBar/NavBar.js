@@ -18,9 +18,10 @@ const NavBar = () => {
   // }, []);
 
   const isLogged = useSelector((state) => state.auth.isAuthenticated);
+  console.log("Logged in: " + isLogged);
 
   return (
-    <header className={classes.toolbar}>
+    <header className={classes.header}>
       <Link to="/" className={classes.header__logo}>
         <Logo />
       </Link>
@@ -46,7 +47,7 @@ const NavBar = () => {
               Search
             </NavLink>
           </li>
-          {isLogged && (
+          {/* {isLogged && (
             <li className={classes.navbar__link}>
               <NavLink to="/user-profile" className={classes.link} activeClassName="active" exact>
                 User Profile
@@ -59,7 +60,7 @@ const NavBar = () => {
                 Team Profile
               </NavLink>
             </li>
-          )}
+          )} */}
           <ProfileAvatar />
         </ul>
       </nav>
