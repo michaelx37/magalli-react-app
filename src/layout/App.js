@@ -6,7 +6,7 @@ import Feed from "../pages/Feed/Feed";
 import Network from "../pages/Network/Network";
 import Search from "../pages/Search/SearchPage";
 import AboutUs from "../pages/AboutUs/AboutUs";
-import LoginPage from "../pages/LoginPage/LoginPage";
+// import LoginPage from "../pages/LoginPage/LoginPage";
 import RegistrationPage from "../pages/RegistrationPage/RegistrationPage";
 import UserProfileExternal from "../pages/Profiles/UserProfileExternal";
 import TeamProfileExternal from "../pages/Profiles/TeamProfileExternal";
@@ -25,7 +25,7 @@ const App = () => {
         <Route path="/network" exact component={Network} />
         <Route path="/search" component={Search} />
         <Route path="/about-us" component={AboutUs} />
-        <Route path="/auth" exact component={LoginPage} />
+        {/* <Route path="/auth" exact component={LoginPage} /> */}
         <Route path="/registration-page" component={RegistrationPage} />
         <Route path="/user-profile" component={UserProfileExternal} />
         <Route path="/team-profile" component={TeamProfileExternal} />
