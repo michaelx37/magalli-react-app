@@ -6,6 +6,7 @@ import MainPageTarget from "../../components/MainPageTarget/MainPageTarget";
 import Footer from "../../components/UI/Footer/Footer";
 
 import classes from "./Home.module.css";
+import NewButton from "../../components/New/Newbutton";
 
 class Home extends Component {
   render() {
@@ -19,6 +20,7 @@ class Home extends Component {
             </div>
             <div className={classes.welcome__message}>
               <h2>Lorem ipsum dolor sit amet</h2>
+              <NewButton text="magalli king" variant="contained" color="primary" onClick={""} />
               <p>
                 consectetur adipiscing elit. Maecenas felis felis, commodo et massa ut, semper varius nisi. Vestibulum
                 bibendum urna eget purus maximus faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et

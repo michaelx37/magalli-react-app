@@ -18,7 +18,7 @@
 .navbar__link {
   padding: 0.6rem;
   list-style: none;
-  display: inline-block;
+  /* display: inline-block; */
   align-self: center;
 }
 

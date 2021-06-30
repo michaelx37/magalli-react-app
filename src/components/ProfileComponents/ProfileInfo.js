@@ -85,10 +85,10 @@ const ProfileInfo = () => {
           )}
         </div>
         <div className={classes.profile__actions}>
-          <div>Add to Friends</div>
+          <div>Add to friends</div>
           <div>Follow</div>
           <div>Message</div>
-          <div>Quick Menu</div>
+          <div>Menu</div>
         </div>
       </div>
     </div>

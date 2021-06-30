@@ -1,7 +1,25 @@
 .activities {
-  text-align: center;
   border: 3px solid rgb(103, 125, 173);
   border-radius: 14px;
   margin: 1rem auto;
   width: 90%;
+  min-height: 10rem;
+  position: relative;
+}
+
+.activities__title {
+  position: absolute;
+  top: -1.14375rem;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.activities__title h4 {
+  display: inline-block;
+  margin: 0;
+  padding: 0.3rem 0.5rem;
+  border: 3px solid rgb(103, 125, 173);
+  background-color: rgb(103, 125, 173);
+  border-radius: 14px;
 }

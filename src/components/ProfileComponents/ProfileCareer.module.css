@@ -6,7 +6,7 @@
   width: 90%;
   position: relative;
   margin-top: 3rem;
-  height: 100rem;
+  min-height: 30rem;
 }
 
 .career__selectors {
@@ -17,14 +17,22 @@
   text-align: center;
 }
 
-.career__selectors h4 {
+.career__selectors__link {
+  text-decoration: none;
   display: inline-block;
   margin: 0;
   padding: 0.3rem 0.5rem;
-  text-align: center;
+  color: white;
+  font-weight: bold;
   border: 3px solid rgb(103, 125, 173);
-  border-radius: 14px;
-  cursor: pointer;
   background-color: rgb(103, 125, 173);
-  margin: 0 0.5rem;
+  border-radius: 14px;
+  margin: 0 0.3rem;
+}
+
+.career__selectors__link:hover,
+.career__selectors__link:active,
+.active {
+  color: rgb(103, 125, 173);
+  background-color: rgb(255, 255, 255);
 }

@@ -55,7 +55,7 @@ const ProfileAvatar = () => {
           />
           {showUserDropdown ? (
             <div className={classes.dropdown}>
-              <p style={{ fontWeight: "bold", textAlign: "center", fontSize: "1.2rem" }}>MG x M1CH43LX37</p>
+              <p style={{ fontWeight: "bold", textAlign: "center", fontSize: "1.4rem" }}>MG x M1CH43LX37</p>
               <Link className={classes.dropdown__link} to="/user-profile">
                 Your Profile
               </Link>
