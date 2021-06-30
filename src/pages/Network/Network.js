@@ -1,6 +1,6 @@
 import React from "react";
 
-import NavBar from "../../components/UI/NavBar/NavBar";
+import NavBar from "../../components/UI/NavBar[OLD]/NavBar";
 
 //import classes from "./Network.module.css";
 

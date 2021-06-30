@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 //import { Link } from "react-router-dom";
 
-import NavBar from "../../components/UI/NavBar/NavBar";
+import NavBar from "../../components/UI/NavBar[OLD]/NavBar";
 import CreatePost from "../../components/CreatePost/CreatePost";
 import FeedCard from "../../components/FeedCard/FeedCard";
 

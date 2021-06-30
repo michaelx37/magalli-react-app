@@ -5,9 +5,6 @@
 
 .welcome {
   display: flex;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("https://images01.nicepage.com/c461c07a441a5d220e8feb1a/506524b5fe295a46bca10adb/vcvv-min.jpg") no-repeat fixed
-      center/cover;
   height: 100vh;
   justify-content: center;
 }
