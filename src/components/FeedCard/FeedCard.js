@@ -1,34 +1,29 @@
 import React from "react";
-
-import Button from "../UI/Button/Button";
-
 import classes from "./FeedCard.module.css";
+import Button from '@material-ui/core/Button';
 
-const FeedCard = (props) => {
+const FeedCard = () => {
   return (
-    <div className={classes.feed__card}>
-      <div className={classes.feed__card__author}>
-        <div className={classes.feed__card__author__avatar}></div>
-        <div className={classes.feed__card__author__name}>Tizio Caio</div>
-        <div className={classes.feed__card__author__options}></div>
+    <div className={classes.feed_card}>
+      <div className={classes.feed_card_author}>
+        <div className={classes.feed_card_author_avatar}></div>
+        <div className={classes.feed_card_author_name}>Tizio Caio</div>
+        <div className={classes.feed_card_author_options}></div>
       </div>
-      <div className={classes.feed__card__content}>
+      <div className={classes.feed_card_content}>
         <iframe
-          //width="1280"
-          //height="720"
           src="https://www.youtube.com/embed/8f-2yXiYmRI"
-          //src="https://www.youtube.com/watch?v=8f-2yXiYmRI"
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
       </div>
-      <div className={classes.feed__card__title}>A Youtube video</div>
-      <div className={classes.feed__card__buttons}>
-        <Button>Like</Button>
-        <Button>Comment</Button>
-        <Button>Share</Button>
+      <div className={classes.feed_card_title}>A Youtube video</div>
+      <div className={classes.feed_card_buttons}>
+        <Button color="primary" variant='contained'>Like</Button>
+        <Button color="primary" variant='contained'>Comment</Button>
+        <Button color="primary" variant='contained'>Share</Button>
       </div>
     </div>
   );
