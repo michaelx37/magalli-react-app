@@ -1,6 +1,6 @@
   import React, { Fragment } from "react";
 
-import NavBar from "../../components/UI/NavBar[OLD]/NavBar";
+import NavBar from "../../components/UI/NavBar/NavBar";
 //import ProfileMilestones from "../../components/ProfileComponents/ProfileMilestones";
 import ProfileInfo from "../../components/ProfileComponents/ProfileInfo";
 import ProfileRecentActivities from "../../components/ProfileComponents/ProfileRecentActivities";

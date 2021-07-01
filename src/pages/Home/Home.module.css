@@ -1,5 +1,4 @@
-.home__main {
-  /* margin-top: 4.5rem; */
+.home_main {
   min-height: calc(100vh - 5rem);
 }
 
@@ -9,30 +8,18 @@
   justify-content: center;
 }
 
-.welcome__image,
-.welcome__message {
+.welcome_image,
+.welcome_message {
   color: white;
   align-self: center;
   margin: 0 2.5rem;
 }
 
-.welcome__image {
-  /* background-color: rgba(255, 255, 255, 0.2); */
-  width: 25rem;
-  height: 25rem;
-  border-radius: 30rem;
-}
 
-.welcome__image img {
-  width: 100%;
-}
 
-.welcome__message {
+.welcome_message {
   width: 25rem;
   /* background-color: rgba(255, 255, 255, 0.2); */
   font-size: 1.2rem;
   text-align: justify;
-}
-
-@media (min-width: 40rem) {
 }

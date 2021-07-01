@@ -1,6 +1,6 @@
 const menu = [
   {
-    link: "/",
+    link: "/home",
     text: "Home",
   },
   {
@@ -11,10 +11,10 @@ const menu = [
     link: "/network",
     text: "Network",
   },
-  {
-    link: "/search",
-    text: "Search",
-  },
+  // {
+  //   link: "/search",
+  //   text: "Search",
+  // },
 ]
 
 export default menu

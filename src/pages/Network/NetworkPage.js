@@ -1,10 +1,10 @@
 import React from "react";
 
-import NavBar from "../../components/UI/NavBar[OLD]/NavBar";
+import NavBar from "../../components/UI/NavBar/NavBar";
 
 //import classes from "./Network.module.css";
 
-const Network = () => {
+const NetworkPage = () => {
   return (
     <div>
       <NavBar />
@@ -13,4 +13,4 @@ const Network = () => {
   );
 };
 
-export default Network;
+export default NetworkPage;

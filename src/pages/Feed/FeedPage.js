@@ -1,13 +1,13 @@
 import React, { Fragment } from "react";
 //import { Link } from "react-router-dom";
 
-import NavBar from "../../components/UI/NavBar[OLD]/NavBar";
+import NavBar from "../../components/UI/NavBar/NavBar";
 import CreatePost from "../../components/CreatePost/CreatePost";
 import FeedCard from "../../components/FeedCard/FeedCard";
 
 import classes from "./Feed.module.css";
 
-const Feed = () => {
+const FeedPage = () => {
   return (
     <Fragment>
       <NavBar />
@@ -28,4 +28,4 @@ const Feed = () => {
   );
 };
 
-export default Feed;
+export default FeedPage;

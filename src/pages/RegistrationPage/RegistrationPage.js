@@ -1,7 +1,7 @@
 import React, { Fragment /*, { useState }*/ } from "react";
 import { Link } from "react-router-dom";
 
-import NavBar from "../../components/UI/NavBar[OLD]/NavBar";
+import NavBar from "../../components/UI/NavBar/NavBar";
 import Footer from "../../components/UI/Footer/Footer";
 
 import classes from "./RegistrationPage.module.css";
